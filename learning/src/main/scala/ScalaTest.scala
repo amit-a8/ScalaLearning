@@ -12,6 +12,11 @@ class ScalaTest(){
 			println(c)
 		}
 	}
+	def getLenth(inputList:List[Int]):Int = inputList match {
+		case Nil => 0
+		case _ :: tail => 1 + getLenth(tail)
+	}
+
 	def getProductExceptItself(score:Array[Int]): Array[Int] = {
 		val length = score.length
 		println(length)
@@ -28,6 +33,14 @@ class ScalaTest(){
 		}
 		ranking.foreach(el => print(el + "  "))
 		ranking
+	}
+
+	def getSubarraySum(inputArray:Array[Int]) : Int = {
+		val length = inputArray.length
+		for(i<- 1 until length){
+			println(i)
+		}
+		length
 	}
 
 }

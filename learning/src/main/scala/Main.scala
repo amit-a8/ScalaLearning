@@ -1,6 +1,7 @@
 import scala.collection.mutable.ArrayBuffer
 
 
+
 object NewtonMethod extends App{
   def abs(x:Double): Double = {
     if (x < 0) -1 *x else x 
@@ -30,17 +31,17 @@ object NewtonMethod extends App{
     else f(a) + sumC(f)(a+1,b)
   }
 
-    println("Hello World!")
-    val keys = Array("the", "a", "there", "answer", "any", "by", "bye", "their", "abc")
-    println("Keys to insert: ")
-    for(k <- keys)
-      print(k + ", ")
-    println()
-    val d = new StoreAndFetchWord
-    for (i <- 0 until keys.length) {
-      d.insertWord(keys(i))
-    }
-    println("Searching 'there' in the dictionary results: " + d.searchWord("there"))
+    // println("Hello World!")
+    // val keys = Array("the", "a", "there", "answer", "any", "by", "bye", "their", "abc")
+    // println("Keys to insert: ")
+    // for(k <- keys)
+    //   print(k + ", ")
+    // println()
+    // val d = new StoreAndFetchWord
+    // for (i <- 0 until keys.length) {
+    //   d.insertWord(keys(i))
+    // }
+    // println("Searching 'there' in the dictionary results: " + d.searchWord("there"))
 
     // val inputList = List(1,2,3,4,5,6,7,8)
     // val listExObj = ListEx()
@@ -50,15 +51,33 @@ object NewtonMethod extends App{
     // println("aaa")
     // println(listExObj.listLength(inputList))
 
-    val vecObj = VectorEx()
-    vecObj.testVector()
-    val testObj = ScalaTest()
-    testObj.hello()
-    val inputList: List[Int] = List(1,2,3,4,5,6)
-    println(testObj.getLenthOfList(inputList))
-    println(testObj.printWord("there"))
-    val inputArray : Array[Int] = Array(1,4,6,9)
-    testObj.getProductExceptItself(inputArray)
+    // val vecObj = VectorEx()
+    // vecObj.testVector()
+    // val testObj = ScalaTest()
+    // testObj.hello()
+    // val inputList: List[Int] = List(1,2,3,4,5,6)
+    // println(testObj.getLenthOfList(inputList))
+    // println(testObj.printWord("there"))
+    // val inputArray : Array[Int] = Array(1,4,6,9)
+    // testObj.getProductExceptItself(inputArray)
+    // val eduObj = RearrangingSearchResult()
+    // eduObj.testMethod()
+    // val initialOrder = "bbbnnccn"
+    // println(eduObj.reorganizeResults(initialOrder))
+    // val obj = PriorityQueueTest()
+    // val processes = Array(1, 2, 3, 4, 5, 6, 7, 1, 23, 21, 3, 1, 2, 1, 1, 1, 1, 1, 12, 2, 3, 2, 3, 2, 2)
+    // println(obj.AllocateSpace(processes, 1))
+
+   // println(testObj.getSubarraySum(processes))
+    val inputArray = Array(3,4,7,2,3,1,4,2)
+    val arrayAlgoObj = kSubArray()
+    // val num = arrayAlgoObj.bruteForce(10, inputArray)
+    // println(num)
+    val num2 = arrayAlgoObj.usingHashMap(10, inputArray)
+    println(num2)
+
+    // val ga = GroupAnagram()
+    // ga.test()
 
   // var medianAge = MedianFinder()
   // medianAge.insertAge(22)
